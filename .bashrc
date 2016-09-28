@@ -41,7 +41,11 @@ export HISTIGNORE='&' # & ignores duplicate lines
 if [ $EUID = 0 ]; then
     export PS1='\[\e[01;31m\]\u@\h \[\e[01;34m\]\w\n\$ \[\e[00m\]'
 else
-    export PS1='\[\e[01;32m\]\u@\h \[\e[01;34m\]\w\n\$ \[\e[00m\]'
+    if [ $(hostname) == "mbrzoska" ] || [ $(hostname) == "hp" ]; then
+        export PS1='\[\e[01;32m\]\u@\h \[\e[01;34m\]\w\n\$ \[\e[00m\]'
+    else
+        export PS1='\[\e[01;33m\]\u@\h \[\e[01;34m\]\w\n\$ \[\e[00m\]'
+    fi
 fi
 #export PS4="\D{%F %T}: "; set -x;
 export PATH=$PATH:$HOME/bin:$HOME/.cabal/bin
