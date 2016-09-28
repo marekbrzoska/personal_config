@@ -267,7 +267,7 @@ if substitute(system('hostname'), '\n', '', '') == 'mbrzoska'
     source /home/mbrzoska/.vim/work.vim
 endif
 
-au BufNew,BufRead *.py :source ~/.vim/python.vim
+" au BufNew,BufRead *.py :source ~/.vim/python.vim
 
 
 let g:ctrlp_extensions = ['tag']
