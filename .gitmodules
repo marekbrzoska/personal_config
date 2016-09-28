@@ -1,0 +1,6 @@
+[submodule ".vim/bundle/vim-yankring"]
+	path = .vim/bundle/vim-yankring
+	url = https://github.com/chrismetcalf/vim-yankring.git
+[submodule ".vim/bundle/bufexplorer"]
+	path = .vim/bundle/bufexplorer
+	url = git@github.com:jlanzarotta/bufexplorer.git
