@@ -44,7 +44,7 @@ else
     if [ $(hostname) == "mbrzoska" ] || [ $(hostname) == "hp" ]; then
         export PS1='\[\e[01;32m\]\u@\h \[\e[01;34m\]\w\n\$ \[\e[00m\]'
     else
-        export PS1='\[\e[01;33m\]\u@\h \[\e[01;34m\]\w\n\$ \[\e[00m\]'
+        export PS1='\[\e[07;33m\]\u@\h\e[27m \[\e[01;34m\]\w\n\$ \[\e[00m\]'
     fi
 fi
 #export PS4="\D{%F %T}: "; set -x;
