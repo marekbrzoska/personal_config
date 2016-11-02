@@ -48,9 +48,9 @@ else
     fi
 fi
 #export PS4="\D{%F %T}: "; set -x;
-export PATH=$PATH:$HOME/bin:$HOME/.cabal/bin
+export PATH=$PATH:$HOME/bin:$HOME/.cabal/bin:/$HOME/apps/idea-IC-162.2228.15/bin
 
-#export PROMPT_COMMAND="echo \"$(`date +'%Y-%m-%d %X'`) $(`history 1`)\" >> ~/.bash_history.full"
+export PROMPT_COMMAND="echo \"$(`date +'%Y-%m-%d %X'`) $(`history 1`)\" >> ~/.bash_history.full"
 export HISTTIMEFORMAT="%Y-%m-%d %H:%M:%S "
 
 
@@ -82,15 +82,6 @@ fi
 function gvim () { (/usr/bin/gvim -f "$@" &) }
 
 
-#VIRTUAL_ENV_WRAPPER_SCRIPT=/usr/local/bin/virtualenvwrapper.sh
-#if [ -f $VIRTUAL_ENV_SCRIPT ] && ! shopt -oq posix; then
-#    # virtualenv wrapper
-#    source $VIRTUAL_ENV_WRAPPER_SCRIPT
-#fi
-#export WORKON_HOME=~/.virtualenvs
-#source /usr/local/bin/virtualenvwrapper.sh
-
-### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
 
