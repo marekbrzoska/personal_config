@@ -4,6 +4,8 @@ Short url: tnij.com/mbrcfg
 
 Installation:
 
+```bash
 git clone https://github.com/marekbrzoska/personal_config.git
 cd personal_config/
 ./link_rc_files.sh
+```
